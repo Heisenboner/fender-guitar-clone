@@ -1,0 +1,96 @@
+.header {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 0.0625rem solid #e5e5e5;
+}
+
+.header_inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+
+  min-height: 5.5rem;
+  padding: 0 2rem;
+}
+
+.header_logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d92d20;
+  letter-spacing: -0.03em;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.header_search {
+  flex: 1;
+  max-width: 42rem;
+
+  display: flex;
+  align-items: center;
+
+  background: #f3f3f3;
+  border-radius: 999rem;
+  padding: 0 1rem;
+  min-height: 3rem;
+
+  border: 0.125rem solid transparent;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.header_search:focus-within {
+  border-color: #000000;
+  background: #ffffff;
+}
+
+.header_searchIcon {
+  color: #6b6b6b;
+  flex-shrink: 0;
+}
+
+.header_input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0.875rem 0.75rem;
+  font-size: 1rem;
+  color: #111111;
+}
+
+.header_input::placeholder {
+  color: #6b6b6b;
+}
+
+.header_icons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.header_iconButton {
+  width: 2.75rem;
+  height: 2.75rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.header_iconButton svg {
+  color: #111111;
+}
+
+.header_iconButton:hover {
+  background: #f3f3f3;
+}

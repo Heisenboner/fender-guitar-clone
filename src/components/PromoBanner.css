@@ -1,0 +1,82 @@
+.promo {
+  position: relative;
+  min-height: 36rem;
+  display: flex;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+.promo_overlay {
+  position: absolute;
+  inset: 0;
+   background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.15) 0%,
+    rgba(0, 0, 0, 0.3) 40%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+}
+
+.promo_content {
+  position: relative;
+  z-index: 1;
+  max-width: 32rem;
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.promo_badge {
+  margin-bottom: 3rem;
+  padding: 0.75rem 1.5rem;
+  border: 0.0625rem solid rgba(255, 255, 255, 0.8);
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.promo_title {
+  font-size: 3rem;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.promo_text {
+  font-size: 1.375rem;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+  color: rgba(255, 255, 255, 0.92);
+  text-align: left;
+}
+
+.promo_button {
+  min-width: 13rem;
+  min-height: 3.5rem;
+  padding: 0.875rem 1.75rem;
+
+  border: none;
+  border-radius: 999rem;
+
+  background: #ffffff;
+  color: #111111;
+
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.promo_button:hover {
+  background: #f2f2f2;
+  transform: translateY(-0.0625rem);
+}

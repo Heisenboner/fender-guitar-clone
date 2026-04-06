@@ -1,0 +1,84 @@
+.trending {
+  padding: 5rem 0;
+  background: #f5f5f5;
+}
+
+.trending_title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 2rem;
+}
+
+.trending_grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.trending_card {
+  width: 100%;
+  position: relative;
+  min-height: 28rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.trending_card:nth-child(1) {
+  background-position: center;
+}
+
+.trending_card:nth-child(2) {
+  background-position: right center;
+}
+
+.trending_card:nth-child(3) {
+  background-position: 30% center;
+}
+
+.trending_card:nth-child(4) {
+  background-position: 60% center;
+}
+
+.trending_overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.15) 0%,
+    rgba(0, 0, 0, 0.3) 40%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+}
+
+.trending_content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.trending_tag {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.trending_cardTitle {
+  font-size: 1.25rem;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #ffffff;
+  max-width: 14rem;
+}
+
+.trending_card:hover {
+  transform: scale(1.03);
+}
