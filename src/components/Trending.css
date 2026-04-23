@@ -82,3 +82,36 @@
 .trending_card:hover {
   transform: scale(1.03);
 }
+
+/* Mobile layout - tablet */
+@media (max-width: 768px) {
+  .trending {
+    padding: 3rem 0;
+  }
+
+  .trending_title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .trending_grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+
+  .trending_card {
+    min-height: 20rem;
+  }
+
+  .trending_cardTitle {
+    font-size: 1rem;
+    max-width: none;
+  }
+}
+
+/* Mobile layout - phone */
+@media (max-width: 480px) {
+  .trending_grid {
+    grid-template-columns: 1fr;
+  }
+}

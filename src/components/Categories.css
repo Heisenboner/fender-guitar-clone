@@ -55,3 +55,29 @@
 .categories_card:hover {
   transform: scale(1.02);
 }
+
+/* Mobile layout - tablet and phone */
+@media (max-width: 768px) {
+  .categories {
+    padding: 3rem 0;
+  }
+
+  .categories_grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0.5rem;
+  }
+
+  .categories_card {
+    min-height: 20rem;
+  }
+
+  .categories_card_large {
+    grid-row: auto;
+    min-height: 20rem;
+  }
+
+  .categories_title {
+    font-size: 1rem;
+  }
+}

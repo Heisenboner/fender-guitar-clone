@@ -80,3 +80,37 @@
   background: #f2f2f2;
   transform: translateY(-0.0625rem);
 }
+
+/* Mobile layout - tablet and phone */
+@media (max-width: 768px) {
+  .promo {
+    min-height: 25rem;
+  }
+
+  .promo_content {
+    max-width: none;
+    padding: 0 1rem;
+  }
+
+  .promo_badge {
+    margin-bottom: 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .promo_title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .promo_text {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .promo_button {
+    min-width: 10rem;
+    min-height: 3rem;
+    font-size: 1rem;
+  }
+}

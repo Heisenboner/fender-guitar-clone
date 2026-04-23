@@ -94,12 +94,54 @@ padding: 3rem 0 3.5rem;
   transform: translateY(-0.0625rem);
 }
 
+/* Mobile layout - small tablet */
 @media (max-width: 900px) {
   .history_cards {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
+/* Mobile layout - phone */
+@media (max-width: 600px) {
+  .history_section {
+    padding: 2rem 0 3rem;
+  }
+
+  .history_header {
+    margin-bottom: 2rem;
+  }
+
+  .history_year {
+    font-size: 3rem;
+  }
+
+  .history_title {
+    font-size: 2rem;
+  }
+
+  .history_cards {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .history_card_text {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .history_bottom {
+    margin-top: 1.5rem;
+  }
+
+  .history_button {
+    width: 100%;
+    min-width: auto;
+    min-height: 2.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile override - extra small phone */
 @media (max-width: 620px) {
   .history_cards {
     grid-template-columns: 1fr;

@@ -79,3 +79,29 @@
 .feature_banner_button:hover {
   transform: translateY(-2px);
 }
+
+/* Mobile layout - tablet and phone */
+@media (max-width: 768px) {
+  .feature_banner {
+    min-height: 25rem;
+  }
+
+  .feature_banner_content {
+    max-width: none;
+    padding: 0 1rem;
+  }
+
+  .feature_banner_title {
+    font-size: 2rem;
+  }
+
+  .feature_banner_text {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .feature_banner_button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}

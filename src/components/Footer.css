@@ -29,7 +29,7 @@
   color: #777;
 }
 
-/* мобілка */
+/* Mobile layout - phone */
 @media (max-width: 600px) {
   .footer {
     padding: 20px;
@@ -37,5 +37,13 @@
 
   .footer-links {
     gap: 10px;
+  }
+
+  .footer-links a {
+    font-size: 11px;
+  }
+
+  .footer-copy {
+    font-size: 11px;
   }
 }
